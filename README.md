@@ -1,4 +1,4 @@
-# Guide d'installation du projet "django_contact_app"
+# Guide d'installation du projet 
 
 ## Prérequis
 
@@ -47,16 +47,6 @@ Par défaut, Django utilise SQLite comme système de base de données, ce qui es
    python manage.py migrate
    ```
 
-2. **Créer un superutilisateur (optionnel)**
-
-   Créez un superutilisateur pour accéder à l'interface d'administration de Django.
-
-   ```bash
-   python manage.py createsuperuser
-   ```
-
-   Suivez les instructions à l'écran pour définir le nom d'utilisateur, l'adresse e-mail et le mot de passe.
-
 ## Lancer le serveur de développement
 
 1. **Démarrer le serveur**
@@ -69,14 +59,11 @@ Par défaut, Django utilise SQLite comme système de base de données, ce qui es
 
 2. **Accéder à l'application**
 
-   Ouvrez votre navigateur et accédez à `http://127.0.0.1:8000/` pour voir l'application en action. Pour accéder à l'interface d'administration, utilisez `http://127.0.0.1:8000/admin/` et connectez-vous avec les identifiants du superutilisateur que vous avez créés.
+   Ouvrez votre navigateur et accédez à `http://127.0.0.1:8000/` pour voir l'application en action. 
 
----
 
-Ce guide fournit une vue d'ensemble des étapes nécessaires pour installer et exécuter votre application Django "django_contact_app" sur un environnement de développement local. Assurez-vous d'adapter les instructions selon les spécificités de votre projet, telles que la configuration de bases de données autres que SQLite ou l'utilisation de variables d'environnement pour la gestion des paramètres secrets.
-
-## Prise d'une application déjà existante
-Nous avons choisi d'utiliser une application existante appelée "django_contact_app" pour avoir une liste de contact.
+# Prise d'une application déjà existante
+Nous avons choisi de creer et utiliser l'application  appelée  pour avoir une liste de contact.
 ![Capture d'écran de l'application](image/home%20contact%20list.png)
 
 ## Bug Bash
@@ -92,7 +79,6 @@ J'ai créé un diagramme de séquence pour représenter l'interaction entre les 
 #### Affichage des Contacts
 ![Diagramme de sequence 2](image/diagramme%20de%20sequence%202)
 <u>Diagramme de sequence n°2</u>
-
 
 
 ## Diagramme d'activité

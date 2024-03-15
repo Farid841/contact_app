@@ -1,19 +1,79 @@
-Farid841: Prendre une application déjà existante
-• Faire un bug bash
-• Faire au moins un diagramme de séquence
-• Faire au moins un diagramme d’activité
-• Ecrire un Scénario de test vertical
-• Ecrire un Scénario de test horizontal
-• Créer une branche de staging
-• Exécutez le bug bash et faites une remontée de
-bug
-• Bonus : intégrer un outil d’automatisation des
-tests (unitaire, intégration ou e2e)
+# Guide d'installation du projet "django_contact_app"
 
-donne moi un bon template pour repondre a ses questions 
-en te basant sur mon projets stp
+## Prérequis
 
-GitHub Copilot: Voici un exemple de template pour répondre aux questions en se basant sur votre projet :
+- Python 3.8 ou supérieur
+- [Poetry](https://python-poetry.org/) pour la gestion des dépendances
+
+## Configuration de l'environnement
+
+1. **Cloner le projet**
+
+   Utilisez Git pour cloner le dépôt du projet dans votre environnement local.
+
+   ```bash
+   git clone https://github.com/Farid841/contact_app.git
+   cd django_contact_app
+   ```
+
+2. **Configurer Poetry et l'environnement virtuel**
+
+   Installez Poetry si ce n'est pas déjà fait, puis configurez l'environnement virtuel du projet.
+
+   ```bash
+   poetry install
+   ```
+
+   Cette commande installera toutes les dépendances nécessaires du projet dans un nouvel environnement virtuel.
+
+3. **Activer l'environnement virtuel**
+
+   Activez l'environnement virtuel géré par Poetry.
+
+   ```bash
+   poetry shell
+   ```
+
+## Configuration de la base de données
+
+Par défaut, Django utilise SQLite comme système de base de données, ce qui est suffisant pour les projets de développement et de test.
+
+1. **Effectuer les migrations**
+
+   Créez les tables de base de données nécessaires en exécutant les migrations Django.
+
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+
+2. **Créer un superutilisateur (optionnel)**
+
+   Créez un superutilisateur pour accéder à l'interface d'administration de Django.
+
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+   Suivez les instructions à l'écran pour définir le nom d'utilisateur, l'adresse e-mail et le mot de passe.
+
+## Lancer le serveur de développement
+
+1. **Démarrer le serveur**
+
+   Lancez le serveur de développement Django en utilisant la commande suivante :
+
+   ```bash
+   python manage.py runserver
+   ```
+
+2. **Accéder à l'application**
+
+   Ouvrez votre navigateur et accédez à `http://127.0.0.1:8000/` pour voir l'application en action. Pour accéder à l'interface d'administration, utilisez `http://127.0.0.1:8000/admin/` et connectez-vous avec les identifiants du superutilisateur que vous avez créés.
+
+---
+
+Ce guide fournit une vue d'ensemble des étapes nécessaires pour installer et exécuter votre application Django "django_contact_app" sur un environnement de développement local. Assurez-vous d'adapter les instructions selon les spécificités de votre projet, telles que la configuration de bases de données autres que SQLite ou l'utilisation de variables d'environnement pour la gestion des paramètres secrets.
 
 ## Prise d'une application déjà existante
 Nous avons choisi d'utiliser une application existante appelée "django_contact_app" pour avoir une liste de contact.

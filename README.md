@@ -163,9 +163,9 @@ git checkout -b staging
 - **Méthode de Documentation** : **GitHub Issues**
 - **Bugs Importants Identifiés** :
   - Bug 1: numéro de tel invalide
-    - **Ticket** : #2
+    - **Ticket** : # 2
   - Bug 2: le champ nom invalide
-    - **Ticket** : #3
+    - **Ticket** : # 3
   - ...(voir le issue board)
 
 ### Suivi

@@ -67,13 +67,13 @@ ici le tp en question: [Link to PDF File](image/Test%20Fonctionnels%20E2E%203.pd
 | Tâche                                        | Statut |
 |---------------------------------------------|:------:|
 | Prendre une application déjà existante      | ✅     |
-| Faire un bug bash                           |        |
+| Faire un bug bash                           |   ✅     |
 | Faire au moins un diagramme de séquence     | ✅ |
 | Faire au moins un diagramme d’activité      | ✅   |
 | Ecrire un Scénario de test vertical         | ✅   |
 | Ecrire un Scénario de test horizontal       | ✅|
 | Créer une branche de staging                | ✅ |
-| Exécutez le bug bash et faites une remontée de bug |   |
+| Exécutez le bug bash et faites une remontée de bug | ✅  |
 | Bonus : intégrer un outil d’automatisation des tests (unitaire, intégration ou e2e) |  ✅ |
 
 Nous avons choisi de creer et utiliser l'application  appelée  pour avoir une liste de contact.

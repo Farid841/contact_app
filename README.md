@@ -153,11 +153,6 @@ git checkout -b staging
 - **Participants** : Développeurs
 - **Objectifs** : Tester la soummission d'un formualire ainsi que la validité de chacun de ses champs.
 
-### Déroulement
-
-- **Formation** : Brève description de la session de formation pour familiariser les participants avec l'application et les objectifs.
-- **Activités** : Résumé des activités menées pendant le bug bash (exploration libre, scénarios de test spécifiques, etc.)
-
 ### Collecte et Analyse des Bugs
 
 - **Méthode de Documentation** : **GitHub Issues**
@@ -170,9 +165,14 @@ git checkout -b staging
 
 ### Suivi
 
-- **Plan de Correction** : Aperçu du plan pour la correction des bugs identifiés
-- **Sessions de Suivi** : Dates planifiées pour les sessions de retest
-
+- **Plan de Correction** :
+ - Bug 1: numéro de tel invalide
+    - Solution: Accepter les caracteres [0-9] uniquement
+ - Bug 2: le champ nom invalide
+    - Solution: Interdire les caracters [0-9] & speciaux sauf `-`
+ - Bug 3:  Nombre de caraterer invalide du numero de tel #4 
+    - Solution: nombre de caracteres minimum & maximum = 10 (n°tel français)
+ 
 ## Intégration d'un Outil d'Automatisation des Tests
 
 ### Choix de l'Outil

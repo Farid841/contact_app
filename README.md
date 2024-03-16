@@ -150,8 +150,8 @@ git checkout -b staging
 ### Préparation
 
 - **Date du Bug Bash** : `Date`
-- **Participants** : Liste des participants (développeurs, testeurs, designers, utilisateurs finaux, etc.)
-- **Objectifs** : Objectifs principaux du bug bash (par exemple, tester les nouvelles fonctionnalités, identifier les bugs dans le formulaire de contact, etc.)
+- **Participants** : Développeurs
+- **Objectifs** : Tester la soummission d'un formualire ainsi que la validité de chacun de ses champs.
 
 ### Déroulement
 
@@ -160,15 +160,13 @@ git checkout -b staging
 
 ### Collecte et Analyse des Bugs
 
-- **Méthode de Documentation** : Outil(s) utilisé(s) pour documenter les bugs (JIRA, GitHub Issues, Trello, etc.)
+- **Méthode de Documentation** : **GitHub Issues**
 - **Bugs Importants Identifiés** :
-  - Bug 1: Description courte
-    - **Détails** : Étapes pour reproduire, captures d'écran, niveau de sévérité
-    - **Ticket** : Numéro du ticket dans l'outil de suivi
-  - Bug 2: Description courte
-    - **Détails** : Étapes pour reproduire, captures d'écran, niveau de sévérité
-    - **Ticket** : Numéro du ticket dans l'outil de suivi
-  - ...
+  - Bug 1: numéro de tel invalide
+    - **Ticket** : #2
+  - Bug 2: le champ nom invalide
+    - **Ticket** : #3
+  - ...(voir le issue board)
 
 ### Suivi
 

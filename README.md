@@ -166,11 +166,11 @@ git checkout -b staging
 ### Suivi
 
 - **Plan de Correction** :
- - Bug 1: numéro de tel invalide
-    - Solution: Accepter les caracteres [0-9] uniquement
- - Bug 2: le champ nom invalide
-    - Solution: Interdire les caracters [0-9] & speciaux sauf `-`
- - Bug 3:  Nombre de caraterer invalide du numero de tel #4 
+ - Bug 1: Numéro de tel invalide
+    - Solution: Accepter les caracteres `[0-9]` uniquement
+ - Bug 2: Le champ nom invalide
+    - Solution: Interdire les caracters `[0-9]` & speciaux sauf `-`
+ - Bug 3: Nombre de caraterer invalide du numero de tel  
     - Solution: nombre de caracteres minimum & maximum = 10 (n°tel français)
  
 ## Intégration d'un Outil d'Automatisation des Tests

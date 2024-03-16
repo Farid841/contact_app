@@ -117,7 +117,7 @@ Un scénario de test vertical a été conçu pour valider le processus complet d
 |-------|---------------------------------|-----|-----|---------------------------------------------|------------|
 | 1     | Accès au formulaire de contact  | ✅   |     |                                             |            |
 | 2     | Saisie des informations contact | ✅   |     |                                             |            |
-| 3     | Soumission du formulaire        |     | ✅   | Problème de validation côté serveur         | #123       |
+| 3     | Soumission du formulaire        | ✅    |    |                                              |        |
 | 4     | Affichage du message de succès  |     | ✅   | Le message de succès ne s'affiche pas       | #124       |
 | 5     | Vérification dans la liste      | ✅   |     | Les données du nouveau contact sont correctes |          |
 
@@ -127,9 +127,9 @@ Un scénario de test horizontal a été mis en place pour tester l'interface uti
 
 | Étape | Fonctionnalité                 | OK | !OK | Commentaire                             | N° Tickets |
 |-------|--------------------------------|----|-----|-----------------------------------------|------------|
-| 1     | Champ 'Nom' vide               |    | ✅  | Le message "Champ requis" ne s'affiche pas | #201       |
+| 1     | Champ 'Nom' vide               | ✅  |     |                                         |       |
 | 2     | Champ 'Email' vide             | ✅ |     | Le message "Champ requis" s'affiche      |            |
-| 3     | Format 'Email' invalide        |    | ✅  | Aucun message d'erreur pour le format    | #202       |
+| 3     | Format 'Email' invalide        | ✅  |   |                                            |        |
 | 4     | Champ 'Téléphone' vide         | ✅ |     | Le message "Champ requis" s'affiche      |            |
 | 5     | Format 'Téléphone' invalide    |    | ✅  | Aucun message d'erreur pour le format    | #203       |
 | 6     | Champ 'Message' vide           | ✅ |     | Le formulaire est soumis sans message    |            |

@@ -79,10 +79,6 @@ ici le tp en question: [Link to PDF File](image/Test%20Fonctionnels%20E2E%203.pd
 Nous avons choisi de creer et utiliser l'application  appelée  pour avoir une liste de contact.
 ![Capture d'écran de l'application](image/home%20contact%20list.png)
 
-## Bug Bash
-
-J'ai réalisé un bug bash sur l'application en testant différentes fonctionnalités et en cherchant des anomalies ou des erreurs. J'ai identifié, c'est que le message ecrit dans le formualire ne s'affiche pas dans la liste de contact
-
 ## Diagramme de séquence
 
 J'ai créé un diagramme de séquence pour représenter l'interaction entre les différents acteurs et les composants de l'application lors d'un scénario spécifique. Ce diagramme permet de visualiser le flux des actions et des messages échangés.  

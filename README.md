@@ -66,15 +66,15 @@ Par défaut, Django utilise SQLite comme système de base de données, ce qui es
 ici le tp en question: [Link to PDF File](image/Test%20Fonctionnels%20E2E%203.pdf).
 | Tâche                                        | Statut |
 |---------------------------------------------|:------:|
-| Prendre une application déjà existante      | ✔️      |
+| Prendre une application déjà existante      | ✅     |
 | Faire un bug bash                           |        |
-| Faire au moins un diagramme de séquence     | ✔️   |
-| Faire au moins un diagramme d’activité      | ✔️   |
-| Ecrire un Scénario de test vertical         | ✔️   |
-| Ecrire un Scénario de test horizontal       |  ✔️|
-| Créer une branche de staging                | ✔️ |
+| Faire au moins un diagramme de séquence     | ✅ |
+| Faire au moins un diagramme d’activité      | ✅   |
+| Ecrire un Scénario de test vertical         | ✅   |
+| Ecrire un Scénario de test horizontal       | ✅|
+| Créer une branche de staging                | ✅ |
 | Exécutez le bug bash et faites une remontée de bug |   |
-| Bonus : intégrer un outil d’automatisation des tests (unitaire, intégration ou e2e) |  ✔️ |
+| Bonus : intégrer un outil d’automatisation des tests (unitaire, intégration ou e2e) |  ✅ |
 
 Nous avons choisi de creer et utiliser l'application  appelée  pour avoir une liste de contact.
 ![Capture d'écran de l'application](image/home%20contact%20list.png)
@@ -115,11 +115,11 @@ Un scénario de test vertical a été conçu pour valider le processus complet d
 
 | Étape | Fonctionnalité                  | OK  | !OK | Commentaire                                 | N° Tickets |
 |-------|---------------------------------|-----|-----|---------------------------------------------|------------|
-| 1     | Accès au formulaire de contact  | ✔️   |     |                                             |            |
-| 2     | Saisie des informations contact | ✔️   |     |                                             |            |
-| 3     | Soumission du formulaire        |     | ✔️   | Problème de validation côté serveur         | #123       |
-| 4     | Affichage du message de succès  |     | ✔️   | Le message de succès ne s'affiche pas       | #124       |
-| 5     | Vérification dans la liste      | ✔️   |     | Les données du nouveau contact sont correctes |          |
+| 1     | Accès au formulaire de contact  | ✅   |     |                                             |            |
+| 2     | Saisie des informations contact | ✅   |     |                                             |            |
+| 3     | Soumission du formulaire        |     | ✅   | Problème de validation côté serveur         | #123       |
+| 4     | Affichage du message de succès  |     | ✅   | Le message de succès ne s'affiche pas       | #124       |
+| 5     | Vérification dans la liste      | ✅   |     | Les données du nouveau contact sont correctes |          |
 
 ### Scénario de Test Horizontal
 
@@ -127,15 +127,15 @@ Un scénario de test horizontal a été mis en place pour tester l'interface uti
 
 | Étape | Fonctionnalité                 | OK | !OK | Commentaire                             | N° Tickets |
 |-------|--------------------------------|----|-----|-----------------------------------------|------------|
-| 1     | Champ 'Nom' vide               |    | ✔️  | Le message "Champ requis" ne s'affiche pas | #201       |
-| 2     | Champ 'Email' vide             | ✔️ |     | Le message "Champ requis" s'affiche      |            |
-| 3     | Format 'Email' invalide        |    | ✔️  | Aucun message d'erreur pour le format    | #202       |
-| 4     | Champ 'Téléphone' vide         | ✔️ |     | Le message "Champ requis" s'affiche      |            |
-| 5     | Format 'Téléphone' invalide    |    | ✔️  | Aucun message d'erreur pour le format    | #203       |
-| 6     | Champ 'Message' vide           | ✔️ |     | Le formulaire est soumis sans message    |            |
-| 7     | Longueur 'Message' excessive   |    | ✔️  | Le formulaire accepte un message trop long | #204     |
-| 8     | Soumission du formulaire complet | ✔️ |   |                                          |            |
-| 9     | Réinitialisation du formulaire | ✔️ |     | Les champs ne sont pas réinitialisés après soumission | |
+| 1     | Champ 'Nom' vide               |    | ✅  | Le message "Champ requis" ne s'affiche pas | #201       |
+| 2     | Champ 'Email' vide             | ✅ |     | Le message "Champ requis" s'affiche      |            |
+| 3     | Format 'Email' invalide        |    | ✅  | Aucun message d'erreur pour le format    | #202       |
+| 4     | Champ 'Téléphone' vide         | ✅ |     | Le message "Champ requis" s'affiche      |            |
+| 5     | Format 'Téléphone' invalide    |    | ✅  | Aucun message d'erreur pour le format    | #203       |
+| 6     | Champ 'Message' vide           | ✅ |     | Le formulaire est soumis sans message    |            |
+| 7     | Longueur 'Message' excessive   |    | ✅  | Le formulaire accepte un message trop long | #204     |
+| 8     | Soumission du formulaire complet | ✅ |   |                                          |            |
+| 9     | Réinitialisation du formulaire | ✅ |     | Les champs ne sont pas réinitialisés après soumission | |
 
 ## Création d'une Branche de Staging
 

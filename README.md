@@ -109,22 +109,29 @@ J'ai également réalisé un diagramme d'activité pour modéliser le dérouleme
 
 Un scénario de test vertical a été conçu pour valider le processus complet de soumission d'un contact, de la saisie dans le formulaire à l'enregistrement dans la base de données et l'affichage dans la liste des contacts.
 
-| Étape | Fonctionnalité                  | OK  | !OK | Commentaire                                 | N° Tickets |
-|-------|---------------------------------|-----|-----|---------------------------------------------|------------|
-| 1     | Accès au formulaire de contact  | ✅   |     |                                             |            |
-| 2     | Saisie des informations contact | ✅   |     |                                             |            |
-| 3     | Soumission du formulaire        | ✅    |    |                                              |        |
-| 4     | Affichage du message de succès  |     | ✅   | Le message de succès ne s'affiche pas       | #124       |
-| 5     | Vérification dans la liste      | ✅   |     | Les données du nouveau contact sont correctes |          |
+1. Accéder au formulaire de contact.
+2. Ajouter le nom du contact dans le champ prévu à cet effet.
+3. Ajouter l'e-mail du contact dans le champ prévu à cet effet.
+4. Ajouter le numéro de téléphone du contact dans le champ prévu à cet effet.
+5. Ajouter un message ou une note pour le contact dans le champ prévu à cet effet (optionnel).
+6. Cliquer sur le bouton de soumission du formulaire.
+7. Vérifier l'affichage du message de succès après soumission du formulaire.
+8. Vérifier que les données du nouveau contact sont correctement enregistrées et affichées dans la liste des contacts.
 
 ### Scénario de Test Horizontal
 
 Un scénario de test horizontal a été mis en place pour tester l'interface utilisateur, en se concentrant sur la validation des champs du formulaire de contact et les messages d'erreur.
 
-| Étape | Fonctionnalité                 | OK | !OK | Commentaire                             | N° Tickets |
+| Étape | Ajouter un message dans le champ prévu à cet effet. | Ajouter le nom du contact dans le champ prévu à cet effet. | Cliquer sur le bouton de soumission du formulaire. | Accéder au formulaire de contact. | Vérifier l'affichage du message de succès. | Ajouter le numéro de téléphone dans le champ prévu à cet effet. | Vérifier que les données du nouveau contact sont correctement enregistrées. | Ajouter l'e-mail du contact dans le champ prévu à cet effet. |
+|-------|--------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------|---------------------------------------|-----------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
+
+
+
+
+-----------------------------------------
 |-------|--------------------------------|----|-----|-----------------------------------------|------------|
-| 1     | Champ 'Nom' vide               | ✅  |     |                                         |       |
-| 2     | Champ 'Email' vide             | ✅ |     | Le message "Champ requis" s'affiche      |            |
+| 1     |               | ✅  |     |                                         |       |
+| 2     |              | ✅ |     | Le message "Champ requis" s'affiche      |            |
 | 3     | Format 'Email' invalide        | ✅  |   |                                            |        |
 | 4     | Champ 'Téléphone' vide         | ✅ |     | Le message "Champ requis" s'affiche      |            |
 | 5     | Format 'Téléphone' invalide    |    | ✅  | Aucun message d'erreur pour le format    | #203       |
@@ -143,21 +150,13 @@ git checkout -b staging
 
 ## Exécution du Bug Bash
 
-### Préparation
+Voici le tableau récapitulatif des bugs identifiés lors du Bug Bash :
 
-- **Date du Bug Bash** : `Date`
-- **Participants** : Développeurs
-- **Objectifs** : Tester la soummission d'un formualire ainsi que la validité de chacun de ses champs.
-
-### Collecte et Analyse des Bugs
-
-- **Méthode de Documentation** : **GitHub Issues**
-- **Bugs Importants Identifiés** :
-  - Bug 1: numéro de tel invalide
-    - **Ticket** : # 2
-  - Bug 2: le champ nom invalide
-    - **Ticket** : # 3
-  - ...(voir le issue board)
+| Bug           | Description                        | Ticket | Statut |
+|---------------|------------------------------------|--------|--------|
+| Numéro de tel invalide | Le numéro de téléphone accepte des caractères non autorisés | #2 | OK |
+| Champ nom invalide | Le champ nom accepte des caractères spéciaux et numériques | #3 | OK |
+| Nombre de caractères invalide du numéro de tel | Le numéro de téléphone ne respecte pas la longueur requise | #4 | OK |
 
 ### Suivi
 
